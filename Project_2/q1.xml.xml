@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblio[
+<!ELEMENT biblio (author*)>
+<!ELEMENT author (name,book+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT book (title, price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST book year CDATA #REQUIRED>
+]>
+<biblio>
+    <author>
+        <name>...</name>
+        <book year="2020">
+            <title>...</title>
+            <price>...</price>
+        </book>
+		<book year="2018">
+            <title>...</title>
+            <price>...</price>
+        </book>
+    </author>
+	<author>
+        <name>...</name>
+        <book year="1999">
+            <title>...</title>
+            <price>...</price>
+        </book>
+		<book year="2015">
+            <title>...</title>
+            <price>...</price>
+        </book>
+    </author>
+</biblio>
